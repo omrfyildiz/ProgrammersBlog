@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProgrammersBlog.Shared.Entities.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammersBlog.Entities.Concrete
 {
-    public class User
+    public class User: EntityBase, IEntity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
